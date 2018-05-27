@@ -1,6 +1,8 @@
 package Items;
 
-public abstract class Item {
+import Interfaces.ISell;
+
+public abstract class Item implements ISell {
     private int buyPrice;
     private int sellPrice;
 
@@ -15,5 +17,9 @@ public abstract class Item {
 
     public int getSellPrice() {
         return this.sellPrice;
+    }
+
+    public int calculateMarkup() {
+        return this.sellPrice - this.buyPrice;
     }
 }

@@ -23,4 +23,8 @@ public class ItemTest {
         assertEquals(2, item.getSellPrice());
     }
 
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(1, item.calculateMarkup());
+    }
 }
