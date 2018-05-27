@@ -17,4 +17,10 @@ public class ItemTest {
     public void hasBuyPrice() {
         assertEquals(1, item.getBuyPrice());
     }
+
+    @Test
+    public void hasSellPrice() {
+        assertEquals(2, item.getSellPrice());
+    }
+
 }

@@ -12,4 +12,8 @@ public abstract class Item {
     public int getBuyPrice() {
         return this.buyPrice;
     }
+
+    public int getSellPrice() {
+        return this.sellPrice;
+    }
 }
