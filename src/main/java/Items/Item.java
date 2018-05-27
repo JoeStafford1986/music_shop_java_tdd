@@ -9,4 +9,7 @@ public abstract class Item {
         this.sellPrice = sellPrice;
     }
 
+    public int getBuyPrice() {
+        return this.buyPrice;
+    }
 }
