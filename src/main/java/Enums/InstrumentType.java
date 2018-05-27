@@ -1,7 +1,8 @@
 package Enums;
 
 public enum InstrumentType {
-    GUITAR("twang twang");
+    GUITAR("twang twang"),
+    PIANO("plink plonk");
 
     private String value;
 
