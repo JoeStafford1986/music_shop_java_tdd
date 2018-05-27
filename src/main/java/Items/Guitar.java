@@ -1,8 +1,16 @@
 package Items;
 
-public class Guitar extends Playable {
+import Enums.InstrumentType;
 
-    public Guitar(String make, String model, int buyPrice, int sellPrice) {
-        super(make, model, buyPrice, sellPrice);
+public class Guitar extends Playable {
+    private String instrumentNoise;
+
+    public Guitar(String make, String model, InstrumentType instrumentType, int buyPrice, int sellPrice) {
+        super(make, model, instrumentType, buyPrice, sellPrice);
+        this.instrumentNoise = instrumentNoise;
+    }
+
+    public String playSound(String instrumentNoise) {
+        return "";
     }
 }

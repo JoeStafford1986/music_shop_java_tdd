@@ -1,13 +1,18 @@
 package Items;
 
-public abstract class Playable extends Item {
+import Enums.InstrumentType;
+import Interfaces.IPlay;
+
+public abstract class Playable extends Item implements IPlay {
     private String make;
     private String model;
+    private InstrumentType instrument;
 
-    public Playable(String make, String model, int buyPrice, int sellPrice) {
+    public Playable(String make, String model, InstrumentType instrument, int buyPrice, int sellPrice) {
         super(buyPrice, sellPrice);
         this.make = make;
         this.model = model;
+        this.instrument = instrument;
     }
 
     public String getMake() {
@@ -16,5 +21,9 @@ public abstract class Playable extends Item {
 
     public String getModel() {
         return this.model;
+    }
+
+    public InstrumentType getInstrumentType() {
+        return this.instrument;
     }
 }
