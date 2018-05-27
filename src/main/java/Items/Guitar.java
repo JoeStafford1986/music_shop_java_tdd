@@ -7,10 +7,10 @@ public class Guitar extends Playable {
 
     public Guitar(String make, String model, InstrumentType instrumentType, int buyPrice, int sellPrice) {
         super(make, model, instrumentType, buyPrice, sellPrice);
-        this.instrumentNoise = instrumentNoise;
+        this.instrumentNoise = instrumentType.getValue();
     }
 
-    public String playSound(String instrumentNoise) {
-        return "";
+    public String playSound() {
+        return this.instrumentNoise;
     }
 }
