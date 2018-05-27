@@ -17,4 +17,9 @@ public class PlayableTest {
     public void hasMake() {
         assertEquals("Fender", playable.getMake());
     }
+
+    @Test
+    public void hasModel() {
+        assertEquals("Stratocaster", playable.getModel());
+    }
 }
